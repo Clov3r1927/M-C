@@ -6,6 +6,7 @@ import { Index } from './Components/Organims/Index'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Layout } from './Components/Organims/Layout'
 import {Muebles} from './Components/page/Muebles'
+import InfoMuebles from './Components/page/InfoMuebles'
 
 //? Creación de las rutas.
 //* Utilizzamos createBrowserRouter de react router para generar el enrutamiento.
@@ -22,17 +23,17 @@ const router = createBrowserRouter([{
     children: [
       //? Todo lo que esté dentro de este "children" compartirá el mismo diseño (Layout)
       {
-<<<<<<< Updated upstream
         path: '/home',
         element : <Index/>
       },
       {
         path: '/mueble/:id',
         element: <Muebles/>
-=======
-        index: true,        
-        element: <Index/>,
->>>>>>> Stashed changes
+      }
+      ,
+      {
+        path: '/muebleInfo/:id',
+        element: <InfoMuebles/>
       }
     ]
   }

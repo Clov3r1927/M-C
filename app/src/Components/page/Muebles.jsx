@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
      }
   const { id } = useParams();
   return (
-      <div className="w-screen  py-2 flex flex-wrap gap-y-6 justify-center gap-x-[6rem]">
+      <div className="w-full  py-2 flex flex-wrap gap-y-6 justify-center gap-x-[6rem]">
       <Card informacion={info}/>
       <Card informacion={info}/>
       <Card informacion={info}/>

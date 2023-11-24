@@ -6,24 +6,26 @@ export const Enlaces = () => {
   const location = useLocation();
 
   return (
-    <div className=' flex gap-9'>
+    <div className='flex gap-9'>
          <Link
                 className= { ` ${location.pathname === '/home' ? ' bg-[#855a51] text-white  text-bold' : '  text-black text-bold' } hover:bg-[#855a51] px-4 py-6` }
             >
                 Cocina
             </Link>
             <Link
-                className= { ` ${location.pathname === '/cocina' ? ' bg-[#855a51] text-white text-bold' : ' text-black text-bold' } hover:bg-[#855a51] px-4 py-6` }
-            >
+                className= { ` ${location.pathname === '/mueble/cocina' ? ' bg-[#855a51] text-white text-bold' : ' text-black text-bold' } hover:bg-[#855a51] px-4 py-6` }
+            to={"/mueble/cuarto"} >
                 Cuartos
             </Link>
             <Link
-                className= { ` ${location.pathname === '/banos' ? ' bg-[#855a51] text-white text-bold' : ' text-black text-bold' } hover:bg-[#855a51] px-4 py-6` }
+            to={"/mueble/baños"}
+                className= { ` ${location.pathname === '/mueble/banos' ? ' bg-[#855a51] text-white text-bold' : ' text-black text-bold' } hover:bg-[#855a51] px-4 py-6` }
             >
                 Baños
             </Link>
             <Link
-                 className= { ` ${location.pathname === '/sala' ? ' bg-[#855a51] text-white text-bold' : ' text-black text-bold' } hover:bg-[#855a51] px-4 py-6` }
+            to={"/mueble/sala"}
+                 className= { ` ${location.pathname === '/mueble/sala' ? ' bg-[#855a51] text-white text-bold' : ' text-black text-bold' } hover:bg-[#855a51] px-4 py-6` }
             >
                 Salas
             </Link>
