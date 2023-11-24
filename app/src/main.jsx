@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import { Index } from './Components/Organims/Index'
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Layout } from './Components/Organims/Layout'
 
@@ -9,7 +11,7 @@ import { Layout } from './Components/Organims/Layout'
 
 const router = createBrowserRouter([{
     path: '/',
-    element: <Home/>, 
+    element: <h1>dfsf</h1>, 
   },
   {
     path: '/home',
@@ -19,7 +21,7 @@ const router = createBrowserRouter([{
       //? Todo lo que esté dentro de este "children" compartirá el mismo diseño (Layout)
       {
         index: true,
-        element: <h1>Componente</h1>,
+        element: <Index/>,
       }
     ]
   }
