@@ -1,11 +1,16 @@
 import React from 'react'
+import { Carrusel } from '../Molecules/Carrusel'
 import { Banner } from '../Molecules/Banner'
 
 export const Index = () => {
   return (
     <div>
-        <Banner/>
-        
+      <div>
+        <h1></h1>
+        <img src="" alt="" />
+      </div>
+      <Banner/>
+        <Carrusel/>
     </div>
   )
 }

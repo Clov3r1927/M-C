@@ -22,17 +22,12 @@ const router = createBrowserRouter([{
     children: [
       //? Todo lo que esté dentro de este "children" compartirá el mismo diseño (Layout)
       {
-<<<<<<< Updated upstream
         path: '/home',
         element : <Index/>
       },
       {
         path: '/mueble/:id',
         element: <Muebles/>
-=======
-        index: true,        
-        element: <Index/>,
->>>>>>> Stashed changes
       }
     ]
   }
