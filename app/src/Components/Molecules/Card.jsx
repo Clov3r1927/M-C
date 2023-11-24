@@ -1,4 +1,4 @@
-import {Imagen} from "../Atoms/Imagen";
+import { Imagen } from "../Atoms/imagen";
 import InformacionCard from "./InformacionCard";
 
 

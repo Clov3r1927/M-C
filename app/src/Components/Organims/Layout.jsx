@@ -11,7 +11,7 @@ export const Layout = () => {
         
         <nav className = ' bg-[#BF8174] w-full h-16 flex items-center justify-between '>
         <h1 className='mx-2 mr-12 text-2xl font-bold '>M & C 
-            <span> muebles sobre diseño </span>
+            <span className='font-light uppercase '> muebles sobre diseño </span>
         </h1>
          <Enlaces/>
         </nav>

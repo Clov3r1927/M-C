@@ -29,11 +29,14 @@ const router = createBrowserRouter([{
       {
         path: '/mueble/:id',
         element: <Muebles/>
+<<<<<<< HEAD
       }
       ,
       {
         path: '/muebleInfo/:id',
         element: <InfoMuebles/>
+=======
+>>>>>>> b709a0c441a05e4a0a862b8c30442cee026e6a5e
       }
     ]
   }
