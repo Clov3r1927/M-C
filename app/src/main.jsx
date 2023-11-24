@@ -8,17 +8,22 @@ import { Layout } from './Components/Organims/Layout'
 //* Utilizzamos createBrowserRouter de react router para generar el enrutamiento.
 
 const router = createBrowserRouter([{
-  path: '/',
-  element: <Layout/>, //? Aquí va el componente Layout
-  errorElement: <h2>Error</h2>, //? Aqui va el elemeto de error
-  children: [
-    //? Todo lo que esté dentro de este "children" compartirá el mismo diseño (Layout)
-    {
-      index: true,
-      element: <h1>Componente</h1>,
-    }
-  ]
-}])
+    path: '/',
+    element: <Home/>, 
+  },
+  {
+    path: '/home',
+    element: <Layout/>, //? Aquí va el componente Layout
+    errorElement: <h2>Error</h2>, //? Aqui va el elemeto de error 
+    children: [
+      //? Todo lo que esté dentro de este "children" compartirá el mismo diseño (Layout)
+      {
+        index: true,
+        element: <h1>Componente</h1>,
+      }
+    ]
+  }
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
