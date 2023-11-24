@@ -16,7 +16,8 @@ const router = createBrowserRouter([{
     {
       index: true,
       element: <h1>Componente</h1>,
-    }
+    },
+   
   ]
 }])
 
