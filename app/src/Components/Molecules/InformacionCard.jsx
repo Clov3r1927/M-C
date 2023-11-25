@@ -1,13 +1,13 @@
 import TextCard from "../Atoms/TextCard";
 
 
-export default function InformacionCard() {
+export default function InformacionCard({descripcion,precio}) {
   return (
-    <div className="flex-col flex">
-       <TextCard texto={"Cubierta de cocina Dos piezas"}/>
-       <TextCard texto={"Material: Madera"}/>
-       <TextCard texto={"Medida: 12 X 4 X 2"}/>
-       <TextCard texto={"Precio:$2.000"}/>
+    <div className="flex flex-col overflow-y-auto h-[12rem] gap-y-5">
+       <TextCard texto={"Precio: " + precio}/>
+       <TextCard texto={"Descripcion: " +descripcion}/>
+      
+     
     </div>
   )
 }

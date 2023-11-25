@@ -9,7 +9,6 @@ export const Index = () => {
         <h1></h1>
         <img src="" alt="" />
       </div>
-      <Banner/>
         <Carrusel/>
     </div>
   )

@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Layout } from './Components/Organims/Layout'
 import {Muebles} from './Components/page/Muebles'
 import InfoMuebles from './Components/page/InfoMuebles'
+import Personalizacion from './Components/page/Personalizacion'
 
 //? Creación de las rutas.
 //* Utilizzamos createBrowserRouter de react router para generar el enrutamiento.
@@ -29,14 +30,17 @@ const router = createBrowserRouter([{
       {
         path: '/mueble/:id',
         element: <Muebles/>
-<<<<<<< HEAD
       }
       ,
       {
         path: '/muebleInfo/:id',
         element: <InfoMuebles/>
-=======
->>>>>>> b709a0c441a05e4a0a862b8c30442cee026e6a5e
+
+      },
+      {
+        path: '/personalizado',
+        element: <Personalizacion/>
+
       }
     ]
   }
