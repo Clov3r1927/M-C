@@ -12,8 +12,9 @@ export const Enlaces = () => {
             ? " bg-[#855a51] text-white  text-bold"
             : "  text-black text-bold"
         } hover:bg-[rgb(133,90,81)] px-4 py-6`}
+        to="/home"
       >
-        home
+        Home
       </Link>
       <Link
         className={` ${
@@ -21,8 +22,9 @@ export const Enlaces = () => {
             ? " bg-[#855a51] text-white  text-bold"
             : "  text-black text-bold"
         } hover:bg-[rgb(133,90,81)] px-4 py-6`}
+        to={"/mueble/cocina"}
       >
-        cocina
+        Cocina
       </Link>
       <Link
         className={` ${
@@ -35,9 +37,9 @@ export const Enlaces = () => {
         Cuartos
       </Link>
       <Link
-        to={"/mueble/baños"}
+        to={"/mueble/banios"}
         className={` ${
-          location.pathname === "/mueble/banos"
+          location.pathname === "/mueble/banios"
             ? " bg-[#855a51] text-white text-bold"
             : " text-black text-bold"
         } hover:bg-[#855a51] px-4 py-6`}

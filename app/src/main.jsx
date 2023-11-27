@@ -8,13 +8,16 @@ import { Layout } from './Components/Organims/Layout'
 import {Muebles} from './Components/page/Muebles'
 import InfoMuebles from './Components/page/InfoMuebles'
 import Personalizacion from './Components/page/Personalizacion'
+import { Login } from './Components/Organims/Login'
+import { NavAdmis } from './Components/Organims/NavAdmis'
+import { Agregar } from './Components/page/Agregar'
 
 //? Creación de las rutas.
 //* Utilizzamos createBrowserRouter de react router para generar el enrutamiento.
 
 const router = createBrowserRouter([{
-    path: '/login',
-    element: <h1>dfsf</h1>,
+    path: '/',
+    element: <Login/>,
     index: true,
   },
   {
@@ -43,13 +46,18 @@ const router = createBrowserRouter([{
 
       }
     ]
+  },
+  {
+    path: '/administrador',
+    element: <Agregar/>,
   }
+
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       {/* //? Provider de react-router-dom que utiliza el router creado */}
-    <RouterProvider router = { router } />
+    <RouterProvider router = { router } defaultValues = {{pathname: "/login"}} />
 
-  </React.StrictMode>,
+  </React.StrictMode>
 )
