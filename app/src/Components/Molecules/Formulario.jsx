@@ -35,7 +35,7 @@ export const Formulario = () => {
         }
        
 
-        navigate('/administrador')
+        navigate('/administrador/agregar')
 
     }
 

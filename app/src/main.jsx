@@ -11,6 +11,8 @@ import Personalizacion from './Components/page/Personalizacion'
 import { Login } from './Components/Organims/Login'
 import { NavAdmis } from './Components/Organims/NavAdmis'
 import { Agregar } from './Components/page/Agregar'
+import { Editar } from './Components/page/Editar'
+import { Modal } from './Components/Molecules/Modal'
 
 //? Creación de las rutas.
 //* Utilizzamos createBrowserRouter de react router para generar el enrutamiento.
@@ -49,7 +51,22 @@ const router = createBrowserRouter([{
   },
   {
     path: '/administrador',
-    element: <Agregar/>,
+    element:   <NavAdmis/>,
+    children: [
+      {
+        index: true,
+        path: "/administrador/agregar",
+        element: <Agregar/>
+      },
+      {
+        path: "/administrador/editar",
+        element: <Editar/>
+      }
+    ]
+  },
+  {
+    path: "/modal",
+    element: <Modal/>
   }
 
 ])

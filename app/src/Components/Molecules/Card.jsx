@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Card({ informacion }) {
   const navegar = useNavigate();
-  const [id2,setID2] = useState(informacion.id)
+
 
   const viewInfo = ()=>{
      navegar(`/muebleInfo/${id2}`)

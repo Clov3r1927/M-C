@@ -1,13 +1,13 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 export const NavAdmis = () => {
 
     const location = useLocation()
 
   return (
-    <div className=" md:flex md:min-h-screen">
-      <aside className=" md:w-1/4 bg-[#855a51] px-5 py-10">
+    <div className=" md:flex md:min-h-screen ">
+      <aside className=" md:w-1/4  bg-[#855a51] px-6 py-10">
         <h2 className="text-4xl font-black text-center text-white">
           {" "}
           M & C - Administrador{" "}
@@ -36,6 +36,12 @@ export const NavAdmis = () => {
           </Link>
         </nav>
       </aside>
+
+
+      <main className=' md:w-3/4  md:h-screen overflow-scroll'>
+        <Outlet/>
+      </main>
+
     </div>
   );
 };
